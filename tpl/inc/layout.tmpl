@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Hello, Golang-MVC</title>
+    </head>
+    <body>
+        <div class="row">
+            {{ template "content" . }}
+        </div>
+        <footer class="footer text-center">
+            <section class="copyright py-4 text-center text-white">
+                <div class="container">
+                    <small>Copyright &copy; sReNcAt Website 2019</small>
+                    <br>
+                    <small>
+                        <a href="https://github.com/sReNcAt">https://github.com/sReNcAt</a>
+                    </small>
+                </div>
+            </section>
+        </footer>
+    </body>
+    {{ block "sidebar" .}}
+    {{end}}
+</html>
